@@ -25,7 +25,12 @@
   android {
     fstab {
       vendor {
-        status = "disabled";
+        compatible = "android,vendor";
+        dev = "/dev/block/platform/soc/7824900.sdhci/by-name/oem";
+        fsmgr_flags = "wait";
+        mnt_flags = "ro,barrier=1,discard";
+        status = "ok";
+        type = "squashfs";
       };
       system {
         compatible = "android,system";
