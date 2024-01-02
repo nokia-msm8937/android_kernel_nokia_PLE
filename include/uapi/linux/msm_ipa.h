@@ -16,6 +16,11 @@
 #define IPA_IOC_MAGIC 0xCF
 
 /**
+ * name for default value of invalid protocol of NAT
+ */
+#define IPAHAL_NAT_INVALID_PROTOCOL   0xFF
+
+/**
  * IPA device full path
  */
 #define IPA_DEV_NAME "/dev/ipa"
