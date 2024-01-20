@@ -25,11 +25,11 @@
   android {
     fstab {
       vendor {
-        dev = "/dev/block/platform/soc/7824900.sdhci/by-name/oem";
+        dev = "/dev/block/platform/soc/7824900.sdhci/by-name/vendor";
         fsmgr_flags = "wait";
         mnt_flags = "ro,barrier=1,discard";
         status = "ok";
-        type = "squashfs";
+        type = "ext4";
       };
       system {
         compatible = "android,system";
